@@ -8,7 +8,7 @@ const Index = () => {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
         <div className="flex items-center space-x-2">
-          <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-8 w-8" />
+          <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-24 w-24" />
           <span className="text-2xl font-bold text-gray-900">PHONI</span>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
@@ -23,18 +23,18 @@ const Index = () => {
       <section className="px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-24 w-24 mx-auto mb-6" />
+            <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-72 w-72 mx-auto mb-6" />
           </div>
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Intelligent Solutions
-            <span className="block" style={{ color: '#00D563' }}>Made Simple</span>
+            Artificial. Fun.
+            <span className="block" style={{ color: '#00D563' }}>Intelligent.</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            PHONI combines cutting-edge AI technology with intuitive design to deliver smart solutions that enhance your productivity and creativity.
+            PHONI combines cutting-edge AI technology with human interaction, fun and intelligence to bring you the next step forward in HI and AI interaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="text-white px-8 hover:bg-[#00C756]" style={{ backgroundColor: '#00D563' }}>
-              Start Free Trial
+              BECOME A BETA TESTER
             </Button>
             <Button size="lg" variant="outline" className="hover:bg-[#00D563]/5" style={{ borderColor: '#00D563', color: '#00D563' }}>
               Learn More
