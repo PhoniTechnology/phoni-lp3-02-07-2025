@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -8,14 +9,15 @@ const Index = () => {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
         <div className="flex items-center space-x-2">
-          <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-24 w-24" />
           <span className="text-2xl font-bold text-gray-900">PHONI</span>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-gray-600 hover:text-[#00D563] transition-colors">Features</a>
           <a href="#about" className="text-gray-600 hover:text-[#00D563] transition-colors">About</a>
-          <a href="#contact" className="text-gray-600 hover:text-[#00D563] transition-colors">Contact</a>
-          <Button className="text-white hover:bg-[#00C756]" style={{ backgroundColor: '#00D563' }}>Get Started</Button>
+          <Link to="/contact" className="text-gray-600 hover:text-[#00D563] transition-colors">Contact</Link>
+          <Link to="/signin">
+            <Button className="text-white hover:bg-[#00C756]" style={{ backgroundColor: '#00D563' }}>SIGN IN</Button>
+          </Link>
         </nav>
       </header>
 
@@ -25,9 +27,8 @@ const Index = () => {
           <div className="mb-8">
             <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-72 w-72 mx-auto mb-6" />
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-            Artificial. Fun.
-            <span className="block" style={{ color: '#00D563' }}>Intelligent.</span>
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <span style={{ color: '#00D563' }}>Artificial. Fun. Intelligent.</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             PHONI combines cutting-edge AI technology with human interaction, fun and intelligence to bring you the next step forward in HI and AI interaction.
@@ -57,8 +58,8 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#00D563/10' }}>
                   <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Smart AI Integration</h3>
-                <p className="text-gray-600">Advanced artificial intelligence that learns and adapts to your unique needs and preferences.</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced Interactive Gaming</h3>
+                <p className="text-gray-600">An advanced, FUN, customizable, fully interactive, gaming experience built to enhance human intelligence and entertainment.</p>
               </CardContent>
             </Card>
             
