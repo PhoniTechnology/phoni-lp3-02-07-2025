@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { toast } from "@/hooks/use-toast";
 
 const Investment = () => {
   const [formData, setFormData] = useState({
@@ -31,7 +32,27 @@ const Investment = () => {
     e.preventDefault();
     console.log("Investment inquiry submitted:", formData);
     console.log("Files:", files);
-    // Handle form submission here
+    
+    // Create email content
+    const emailBody = `
+Investment Inquiry:
+
+Email: ${formData.email}
+Phone: ${formData.phone}
+Country: ${formData.country}
+Message: ${formData.message}
+
+${files && files.length > 0 ? `Files attached: ${Array.from(files).map(file => file.name).join(', ')}` : 'No files attached'}
+    `;
+    
+    // Create mailto link
+    const mailtoLink = `mailto:phoni.technology@gmail.com?subject=Investment Inquiry&body=${encodeURIComponent(emailBody)}`;
+    window.open(mailtoLink, '_blank');
+    
+    toast({
+      title: "Investment Inquiry Prepared",
+      description: "Your default email client will open with the inquiry ready to send. Please attach your files manually.",
+    });
   };
 
   return (

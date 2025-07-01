@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import { toast } from "@/hooks/use-toast";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,26 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Contact form submitted:", formData);
-    // Handle form submission here
+    
+    // Create email content
+    const emailBody = `
+Contact Form Submission:
+
+Email: ${formData.email}
+Country: ${formData.country}
+Age: ${formData.age}
+Sex: ${formData.sex}
+Message: ${formData.message}
+    `;
+    
+    // Create mailto link
+    const mailtoLink = `mailto:phoni.technology@gmail.com?subject=Contact Form Submission&body=${encodeURIComponent(emailBody)}`;
+    window.open(mailtoLink, '_blank');
+    
+    toast({
+      title: "Message Prepared",
+      description: "Your default email client will open with the message ready to send.",
+    });
   };
 
   return (
