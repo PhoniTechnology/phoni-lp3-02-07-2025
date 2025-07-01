@@ -61,7 +61,7 @@ const Index = () => {
                   <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">ADVANCED INTERACTIVE AI VS HI GAMING</h3>
-                <p className="text-gray-600">An advanced, FUN, customizable, fully interactive, gaming experience built to enhance human intelligence and entertainment.</p>
+                <p className="text-gray-600">An advanced, FUN, customizable, fully interactive, gaming experience built to enhance human intelligence and entertainment. Test your intelligence against HIs or our AIs (Eva / Max). Long live HI!</p>
               </CardContent>
             </Card>
             
