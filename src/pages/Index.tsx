@@ -27,8 +27,8 @@ const Index = () => {
           <div className="mb-8">
             <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-72 w-72 mx-auto mb-6" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            <span style={{ color: '#00D563' }}>Artificial. Fun. Intelligent.</span>
+          <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            <span style={{ color: '#00D563' }}>ARTIFICIAL. FUN. INTELLIGENT.</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             PHONI combines cutting-edge AI technology with human interaction, fun and intelligence to bring you the next step forward in HI and AI interaction.
@@ -48,8 +48,10 @@ const Index = () => {
       <section id="features" className="px-6 py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose PHONI?</h2>
-            <p className="text-xl text-gray-600">Powerful features designed for modern workflows</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+              Why you'll use <span style={{ color: '#00D563' }}>PHONI</span>, and love it?
+            </h2>
+            <p className="text-xl text-gray-600">A mobile AI application built to reshape FUN, gaming interaction and intelligence.</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -58,7 +60,7 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#00D563/10' }}>
                   <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Advanced Interactive Gaming</h3>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">ADVANCED INTERACTIVE AI VS HI GAMING</h3>
                 <p className="text-gray-600">An advanced, FUN, customizable, fully interactive, gaming experience built to enhance human intelligence and entertainment.</p>
               </CardContent>
             </Card>
@@ -69,7 +71,7 @@ const Index = () => {
                   <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-8 w-8" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">Intuitive Design</h3>
-                <p className="text-gray-600">Clean, modern interface that makes complex tasks simple and enjoyable to complete.</p>
+                <p className="text-gray-600">A clean, modern telephony interface, that evolves M2M (mobile gameplay) and AI interactions in every way. Complete with animated AI avatars, and universal gameplay to see who the smartest HI (human intelligence) really is.</p>
               </CardContent>
             </Card>
             
@@ -78,23 +80,38 @@ const Index = () => {
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6" style={{ backgroundColor: '#00D563/10' }}>
                   <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-8 w-8" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">Seamless Performance</h3>
-                <p className="text-gray-600">Lightning-fast processing and real-time updates keep you productive without interruption.</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">UNPARALLELED PERFORMANCE</h3>
+                <p className="text-gray-600">An AI / HI completely different interactive M2M gaming telephony experience with biometrics, mental stats, and ocular / emotional recognition engineered into the user interactions.</p>
               </CardContent>
             </Card>
           </div>
         </div>
       </section>
 
+      {/* Investment Section */}
+      <section className="px-6 py-20 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6">Investment</h2>
+          <p className="text-xl text-gray-600 mb-8">
+            We are currently seeking qualified investors for our project. If you're that person, please contact us.
+          </p>
+          <Link to="/investment">
+            <Button size="lg" className="text-white hover:bg-[#00C756] px-8" style={{ backgroundColor: '#00D563' }}>
+              Contact for Investment
+            </Button>
+          </Link>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="px-6 py-20" style={{ backgroundColor: '#00D563' }}>
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Ready to Get Started?</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Let's play smart.</h2>
           <p className="text-xl text-white/90 mb-8">
-            Join thousands of users who have already transformed their workflow with PHONI.
+            Become a PHONI user and test the beta before public launch Summer 2025.
           </p>
-          <Button size="lg" className="bg-white hover:bg-gray-100 px-8" style={{ color: '#00D563' }}>
-            Start Your Journey Today
+          <Button size="lg" className="bg-white hover:bg-gray-100 px-8 text-black">
+            Want Some Fun?
           </Button>
         </div>
       </section>
