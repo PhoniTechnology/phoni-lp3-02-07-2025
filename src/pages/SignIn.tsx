@@ -5,9 +5,11 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Link } from "react-router-dom";
+import BetaTesterSignup from "@/components/BetaTesterSignup";
 
 const SignIn = () => {
   const [isSignUp, setIsSignUp] = useState(false);
+  const [isBetaSignupOpen, setIsBetaSignupOpen] = useState(false);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -184,6 +186,19 @@ const SignIn = () => {
               </button>
             </div>
 
+            {!isSignUp && (
+              <div className="text-center">
+                <button
+                  type="button"
+                  onClick={() => setIsBetaSignupOpen(true)}
+                  className="text-sm hover:underline"
+                  style={{ color: '#00D563' }}
+                >
+                  Don't have an account? Become a beta tester
+                </button>
+              </div>
+            )}
+
             <div className="text-center">
               <Link to="/" className="text-sm text-gray-500 hover:underline">
                 Back to Home
@@ -192,6 +207,12 @@ const SignIn = () => {
           </CardContent>
         </Card>
       </div>
+
+      {/* Beta Tester Signup Modal */}
+      <BetaTesterSignup 
+        isOpen={isBetaSignupOpen} 
+        onClose={() => setIsBetaSignupOpen(false)} 
+      />
     </div>
   );
 };

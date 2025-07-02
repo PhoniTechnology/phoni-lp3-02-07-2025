@@ -1,9 +1,12 @@
-
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import BetaTesterSignup from "@/components/BetaTesterSignup";
 
 const Index = () => {
+  const [isBetaSignupOpen, setIsBetaSignupOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -34,7 +37,12 @@ const Index = () => {
             PHONI combines cutting-edge AI technology with human interaction, fun and intelligence to bring you the next step forward in HI and AI interaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="text-white px-8 hover:bg-[#00C756]" style={{ backgroundColor: '#00D563' }}>
+            <Button 
+              size="lg" 
+              className="text-white px-8 hover:bg-[#00C756]" 
+              style={{ backgroundColor: '#00D563' }}
+              onClick={() => setIsBetaSignupOpen(true)}
+            >
               BECOME A BETA TESTER
             </Button>
             <Link to="/about">
@@ -149,7 +157,11 @@ const Index = () => {
           <p className="text-xl text-white/90 mb-8">
             Become a PHONI user and test the beta before public launch Summer 2025.
           </p>
-          <Button size="lg" className="bg-white hover:bg-gray-100 px-8 text-black">
+          <Button 
+            size="lg" 
+            className="bg-white hover:bg-gray-100 px-8 text-black"
+            onClick={() => setIsBetaSignupOpen(true)}
+          >
             Want Some Fun?
           </Button>
         </div>
@@ -174,6 +186,12 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Beta Tester Signup Modal */}
+      <BetaTesterSignup 
+        isOpen={isBetaSignupOpen} 
+        onClose={() => setIsBetaSignupOpen(false)} 
+      />
     </div>
   );
 };
