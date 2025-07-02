@@ -13,7 +13,7 @@ const Index = () => {
         </div>
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-gray-600 hover:text-[#00D563] transition-colors">Features</a>
-          <a href="#about" className="text-gray-600 hover:text-[#00D563] transition-colors">About</a>
+          <Link to="/about" className="text-gray-600 hover:text-[#00D563] transition-colors">About</Link>
           <Link to="/contact" className="text-gray-600 hover:text-[#00D563] transition-colors">Contact</Link>
           <Link to="/signin">
             <Button className="text-white hover:bg-[#00C756]" style={{ backgroundColor: '#00D563' }}>SIGN IN</Button>
@@ -37,9 +37,11 @@ const Index = () => {
             <Button size="lg" className="text-white px-8 hover:bg-[#00C756]" style={{ backgroundColor: '#00D563' }}>
               BECOME A BETA TESTER
             </Button>
-            <Button size="lg" variant="outline" className="hover:bg-[#00D563]/5" style={{ borderColor: '#00D563', color: '#00D563' }}>
-              Learn More
-            </Button>
+            <Link to="/about">
+              <Button size="lg" variant="outline" className="hover:bg-[#00D563]/5" style={{ borderColor: '#00D563', color: '#00D563' }}>
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -49,7 +51,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why you'll use <span style={{ color: '#00D563' }}>PHONI</span>, and love it?
+              Why you will use <span style={{ color: '#00D563' }}>PHONI</span>, and love it.
             </h2>
             <p className="text-xl text-gray-600">A mobile AI application built to reshape FUN, gaming interaction and intelligence.</p>
           </div>
@@ -88,8 +90,45 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Investment Section */}
+      {/* How PHONI Creates Section */}
       <section className="px-6 py-20 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-12">
+              How <span style={{ color: '#00D563' }}>PHONI</span> creates and evolves HI / AI interaction.
+            </h2>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">What is PHONI?</h3>
+                <p className="text-gray-600">PHONI is a unique and interactive blend of M2M gaming, education, mental health, social media, LLM chatbot, messaging, and content generation through a mobile telephony platform.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">Why are we different than any other AI app / agent on the market?</h3>
+                <p className="text-gray-600">PHONI provides a uniquely interactive platform for humans (HI) and droids (AI), with real personality and customizable personality characteristics for a female (Eva) or male (Max) AI with a fun, frisky, and free-spirited attitude.</p>
+              </div>
+            </div>
+            
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">How does PHONI enhance your life?</h3>
+                <p className="text-gray-600">PHONI connects users from across the world in games based on finding out, Who's the smartest? Whos' the most intelligent? Use it for team-building. Use it for social events with friends. Connect with friends in different parts of the world to not just be on a phone call, but play a game that is truly FUN and makes you smarter.</p>
+              </div>
+              
+              <div>
+                <h3 className="text-2xl font-semibold text-gray-900 mb-4">What technology features does PHONI use to enhance user experience (UX)?</h3>
+                <p className="text-gray-600">PHONI incorporates: biometrics, ocular recognition, micro-interactions, LLM, advanced animated AI avatars, real time telephony interactions. Simply put, you'll never look at AI mobile apps the same way ever again.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Investment Section */}
+      <section className="px-6 py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">Investment</h2>
           <p className="text-xl text-gray-600 mb-8">
@@ -120,9 +159,14 @@ const Index = () => {
       <footer className="px-6 py-12 bg-gray-900">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex items-center space-x-2 mb-4 md:mb-0">
-              <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-6 w-6" />
-              <span className="text-xl font-bold text-white">PHONI</span>
+            <div className="flex items-center space-x-4 mb-4 md:mb-0">
+              <div className="flex items-center space-x-2">
+                <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-6 w-6" />
+                <span className="text-xl font-bold text-white">PHONI</span>
+              </div>
+              <Link to="/contact" className="text-sm text-gray-400 hover:text-[#00D563] transition-colors">
+                Contact PHONI
+              </Link>
             </div>
             <div className="text-gray-400 text-sm">
               © 2024 PHONI. All rights reserved.
