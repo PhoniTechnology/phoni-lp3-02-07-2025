@@ -28,7 +28,14 @@ const Index = () => {
       <section className="px-6 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
-            <img src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" alt="PHONI Logo" className="h-72 w-72 mx-auto mb-6" />
+            <img 
+              src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" 
+              alt="PHONI Logo" 
+              className="h-72 w-72 mx-auto mb-6 drop-shadow-[0_0_15px_rgba(0,213,99,0.4)] animate-pulse"
+              style={{
+                filter: 'drop-shadow(0 0 20px rgba(0, 213, 99, 0.6)) drop-shadow(0 0 40px rgba(0, 213, 99, 0.3))'
+              }}
+            />
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             <span style={{ color: '#00D563' }}>ARTIFICIAL. FUN. INTELLIGENT.</span>
@@ -102,6 +109,13 @@ const Index = () => {
       <section className="px-6 py-20 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
+            <div className="flex justify-center mb-6">
+              <img 
+                src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" 
+                alt="PHONI Logo" 
+                className="h-16 w-16"
+              />
+            </div>
             <h2 className="text-4xl font-bold text-gray-900 mb-12">
               How <span style={{ color: '#00D563' }}>PHONI</span> creates and evolves HI / AI interaction.
             </h2>

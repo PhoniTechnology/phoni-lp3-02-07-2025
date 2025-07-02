@@ -67,7 +67,7 @@ ${formData.firstName} ${formData.lastName}`;
               className="h-12 w-12" 
             />
           </div>
-          <DialogTitle className="text-2xl font-bold text-gray-900">
+          <DialogTitle className="text-2xl font-bold text-gray-900 text-center">
             Become a <span style={{ color: '#00D563' }}>PHONI</span> Beta Tester
           </DialogTitle>
         </DialogHeader>
