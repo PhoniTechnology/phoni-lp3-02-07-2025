@@ -31,9 +31,9 @@ const Index = () => {
             <img 
               src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" 
               alt="PHONI Logo" 
-              className="h-72 w-72 mx-auto mb-6 drop-shadow-[0_0_15px_rgba(0,213,99,0.4)] animate-pulse"
+              className="h-72 w-72 mx-auto mb-6"
               style={{
-                filter: 'drop-shadow(0 0 20px rgba(0, 213, 99, 0.6)) drop-shadow(0 0 40px rgba(0, 213, 99, 0.3))'
+                filter: 'drop-shadow(0 0 15px rgba(0, 213, 99, 0.5)) drop-shadow(0 0 25px rgba(0, 213, 99, 0.3))'
               }}
             />
           </div>
