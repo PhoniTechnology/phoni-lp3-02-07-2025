@@ -12,10 +12,15 @@ const Index = () => {
       {/* Header */}
       <header className="flex items-center justify-between px-6 py-4 border-b border-gray-100">
         <div className="flex items-center space-x-2">
+          <img 
+            src="/lovable-uploads/4ea69e9c-a7bd-494c-bc88-b9413b9f6ae8.png" 
+            alt="PHONI Logo" 
+            className="h-8 w-8"
+          />
           <span className="text-2xl font-bold text-gray-900">PHONI</span>
         </div>
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-gray-600 hover:text-[#00D563] transition-colors">Features</a>
+          <Link to="/features" className="text-gray-600 hover:text-[#00D563] transition-colors">Features</Link>
           <Link to="/about" className="text-gray-600 hover:text-[#00D563] transition-colors">About</Link>
           <Link to="/contact" className="text-gray-600 hover:text-[#00D563] transition-colors">Contact</Link>
           <Link to="/signin">
